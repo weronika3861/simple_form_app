@@ -31,4 +31,4 @@ FROM installation
 
 EXPOSE 8000
 
-CMD php bin/console doctrine:migrations:migrate && php bin/console messenger:consume async & symfony server:start --allow-all-ip
+CMD php bin/console doctrine:migrations:migrate && php bin/console messenger:consume async & php -S 0.0.0.0:8000 -t public
