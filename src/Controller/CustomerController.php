@@ -84,7 +84,7 @@ class CustomerController extends AbstractController
     #[Route('/customer/list', name: 'customer_list', methods: ['GET'])]
     public function list(): Response
     {
-//        $this->denyAccessUnlessGranted('ROLE_ADMIN');
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         $customers = $this->customerRepository->findAll();
 
         return $this->render('customer/list.html.twig', [
