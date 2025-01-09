@@ -26,10 +26,11 @@ The Customer List page is protected and can only be accessed by authenticated us
 - Docker Compose 
 
 ### 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-repo/app.git
-   cd app
-   ```
+
+```
+git clone https://github.com/weronika3861/simple_form_app.git`
+cd simple_form_app
+```
 
 ### 2. **Build and start the Docker containers**
    ```bash
@@ -58,10 +59,10 @@ The Customer List page is protected and can only be accessed by authenticated us
 
 First, clone the repository to your local machine:
 
-`git clone https://github.com/weronika3861/simple_form_app.git`
-
-`cd simple_form_app`
-
+````
+git clone https://github.com/weronika3861/simple_form_app.git
+cd simple_form_app
+````
 ### 2. Install dependencies
 
 Install all dependencies using the following command:
