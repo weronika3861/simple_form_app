@@ -28,7 +28,7 @@ The Customer List page is protected and can only be accessed by authenticated us
 ### 1. **Clone the repository**
 
 ```
-git clone https://github.com/weronika3861/simple_form_app.git`
+git clone https://github.com/weronika3861/simple_form_app.git
 cd simple_form_app
 ```
 
