@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Customers</h1>
+
+    <table class="table table-hover table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Attachment</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for customer in customers %}
+            <tr>
+                <td>{{ customer.id }}</td>
+                <td>{{ customer.firstName }}</td>
+                <td>{{ customer.lastName }}</td>
+                <td>
+                    {% if customer.attachment is not null %}
+                        <img src="{{ asset(['uploads', customer.attachment]|join('/')) }}"
+                             width="100" height="100" alt="image">
+                    {% endif %}
+                </td>
+        {% else %}
+            <tr>
+                <td colspan="4"> no records found </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

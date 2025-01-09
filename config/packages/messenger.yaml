@@ -1,0 +1,12 @@
+framework:
+    messenger:
+        buses:
+            default:
+                default_middleware: true
+        routing:
+            'App\Message\CustomerCreatedMessage': async
+        transports:
+            async:
+                dsn: 'doctrine://default'
+                options:
+                    table_name: messenger_messages
